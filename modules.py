@@ -2,3 +2,4 @@
 
 from tkinter import *
 from validate_email import validate_email
+from tkinter import messagebox as MessageBox
