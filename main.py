@@ -11,13 +11,13 @@ def Quit():
 
 def VerifyEmail():
     if (mail.get() == ""):
-        response.config(text="You have to introduce an email", fg="black")
+        response.config(text="You have to introduce an email", fg="black", font=("Calibri Bold", 12))
     else:
         is_valid = validate_email(mail.get())
         if (is_valid):
-            response.config(text="This email exists", fg="green", font=("Verdana", 15))
+            response.config(text="This email exists", fg="green", font=("Calibri Bold", 12))
         else:
-            response.config(text="This email does not exist", fg="red")
+            response.config(text="This email does not exist", fg="red", font=("Calibri Bold", 12))
         mail.set("")
 
 root = Tk() # Creat tkinter object
@@ -55,7 +55,7 @@ input_text.pack()
 
 Label(root, text="").pack() # SEPARATOR
 
-btn_verify = Button(root, text = "Verify email", command=VerifyEmail, bd=5, font=("Calibri Bold", 10))
+btn_verify = Button(root, text = "Verify email", command=VerifyEmail, bd=5, font=("Calibri Bold", 10), cursor="hand2")
 btn_verify.pack()
 
 Label(root, text="").pack() # SEPARATOR
@@ -65,7 +65,7 @@ response.pack()
 
 Label(root, text="").pack() # SEPARATOR
 
-version = Label(root, text="Version Beta")
+version = Label(root, text="V1.0", bg="white", pady=5, padx=5, font=("Calibri Bold", 10))
 version.pack(anchor = "sw", side="left", pady=5, padx=5)
 
 
