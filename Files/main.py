@@ -25,7 +25,7 @@ root = Tk() # Creat tkinter object
 # Window configuration
 mail = StringVar()
 root.resizable(0, 0)
-root.iconbitmap('icon.ico')
+root.iconbitmap('../icon.ico')
 root.geometry("700x350") # ANCHURA - ALTURA
 root.title("Mail Verificator") # Window Title
 
