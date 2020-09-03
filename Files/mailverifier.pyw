@@ -31,7 +31,7 @@ root = Tk() # Create tkinter object
 mail = StringVar()
 root.resizable(0, 0)
 root.iconbitmap('icon.ico') # Window icon
-root.geometry("700x350") # WIDTH - HEIGHT
+root.geometry("700x350") # Width - Height
 root.title("Mail Verificator") # Window Title
 
 # Menu configuration
