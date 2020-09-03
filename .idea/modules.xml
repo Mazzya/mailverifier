@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mailverificator.iml" filepath="$PROJECT_DIR$/.idea/mailverificator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mailverifier.iml" filepath="$PROJECT_DIR$/.idea/mailverifier.iml" />
     </modules>
   </component>
 </project>
