@@ -1,4 +1,4 @@
-from modules import * #ss
+from modules import *
 
 def About():
     MessageBox.showinfo("About", "Developer github profile : www.github.com/Mazzya\n"
