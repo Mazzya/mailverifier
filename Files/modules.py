@@ -1,4 +1,4 @@
-# Este modulo contiene todas las importaciones necesarias para el funcionamiento del programa
+# This module contains all the imports necessary for the operation of the program.
 
 from tkinter import *
 from validate_email import validate_email

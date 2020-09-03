@@ -1,8 +1,13 @@
 from modules import *
 
 def About():
-    MessageBox.showinfo("About", "Developed by Mazzya\n"
-                                 "www.github.Mazzya")
+    MessageBox.showinfo("About", "Developer github profile : www.github.com/Mazzya\n"
+                                 " \n"
+                                 "The code of this program is totally accessible and free on GitHub, you can contribute for free, either with code or with documentation.\n"
+                                 " \n"
+                                 "Project repository : www.github.com/mailverificator\n"
+                                 " \n"
+                                 "Current Version : 1.0.0 - Beta")
 
 def Quit():
     choice = MessageBox.askyesno("Exit", "Are you sure you want exit ?")
@@ -20,13 +25,13 @@ def VerifyEmail():
             response.config(text="This email does not exist", fg="red", font=("Calibri Bold", 12))
         mail.set("")
 
-root = Tk() # Creat tkinter object
+root = Tk() # Create tkinter object
 
 # Window configuration
 mail = StringVar()
 root.resizable(0, 0)
-root.iconbitmap('../icon.ico')
-root.geometry("700x350") # ANCHURA - ALTURA
+root.iconbitmap('../icon.ico') # Window icon
+root.geometry("700x350") # WIDTH - HEIGHT
 root.title("Mail Verificator") # Window Title
 
 # Menu configuration
@@ -65,7 +70,7 @@ response.pack()
 
 Label(root, text="").pack() # SEPARATOR
 
-version = Label(root, text="V1.0", bg="white", pady=5, padx=5, font=("Calibri Bold", 10))
+version = Label(root, text="V 1.0.0 - BETA", bg="white", pady=5, padx=5, font=("Calibri Bold", 10))
 version.pack(anchor = "sw", side="left", pady=5, padx=5)
 
 
