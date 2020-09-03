@@ -1,2 +1,2 @@
-# mailverificator
-SOON
+# eMail Verificator
+Email verificator with graphical interface
