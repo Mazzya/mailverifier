@@ -1,6 +1,6 @@
 from modules import *
 
-version = "1.3.2b"
+version = "1.3.2-beta"
 
 def About():
     MessageBox.showinfo("About", "Developer github profile : www.github.com/Mazzya\n"
