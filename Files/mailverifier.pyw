@@ -2,7 +2,7 @@ from tkinter import *
 from validate_email import validate_email
 from tkinter import messagebox as MessageBox
 
-version = "1.4.2-beta"
+version = "2.3.3-beta"
 
 def About():
     MessageBox.showinfo("About", "Developer github profile : www.github.com/Mazzya\n"
@@ -22,11 +22,11 @@ def VerifyEmail():
     if (mail.get() == ""):
         response.config(text="You have to introduce an email", fg="black", font=("Calibri Bold", 12))
     else:
-        is_valid = validate_email(mail.get())
+        is_valid = validate_email(mail.get(), check_mx=True) # Check if email and SMTP Server is valid
         if (is_valid):
-            response.config(text="This email exists", fg="green", font=("Calibri Bold", 12))
+            response.config(text=f"The email '{mail.get()}' is valid", fg="green", font=("Calibri Bold", 12))
         else:
-            response.config(text="This email does not exist", fg="red", font=("Calibri Bold", 12))
+            response.config(text=f"The email '{mail.get()}' is not valid", fg="red", font=("Calibri Bold", 12))
         mail.set("")
 
 root = Tk() # Create tkinter object
@@ -54,7 +54,7 @@ title.pack()
 
 Label(root, text="").pack() # SEPARATOR
 
-description = Label(root, text="Welcome to Mail Verifier, if you want to verify if an email exists\nenter it and click on the 'Verify' button", font=("Calibri Bold", 10))
+description = Label(root, text="Welcome to Mail Verifier, if you want to verify if an email is valid\nenter it and click on the 'Verify' button", font=("Calibri Bold", 10))
 description.pack()
 
 Label(root, text="").pack() # SEPARATOR
