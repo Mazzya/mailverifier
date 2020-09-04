@@ -1,6 +1,8 @@
-from modules import *
+from tkinter import *
+from validate_email import validate_email
+from tkinter import messagebox as MessageBox
 
-version = "1.3.2-beta"
+version = "1.4.2-beta"
 
 def About():
     MessageBox.showinfo("About", "Developer github profile : www.github.com/Mazzya\n"
