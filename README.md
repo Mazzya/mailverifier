@@ -6,3 +6,4 @@ Email verifier with graphical interface who allows you to verify if an email exi
 #### Requirements
 - Python 3
 - validate_email 1.3 (pip install validate_email)
+- py3dns 3.2.1 (pip install py3dns)
