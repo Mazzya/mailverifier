@@ -2,7 +2,7 @@
 ## v2.3.3b - Sep. 04, 2020
 **Added:**
 - An SMTP server checker has been added
-- Now in the response the entered email is returned
+- Now in the response the entered string is returned
 
 **Changed:**
 - All the imports that were in the file "modules.py" have been moved to the main file "mailverifier.pyw". This will allow a better organization of the files if there are more dependencies in the future
